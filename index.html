@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-1.6.2.min.js"></script>
+        <style type="text/css">
+            #content{
+                width: 200px;
+                height: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>dfgdgdf</h1>
+        <span id ="foo">вамавмва</span>
+        <div id="content">
+            
+        </div>
+        <script>
+                   
+            
+            $(document).ready(function(){
+                
+                
+                
+                   var hand = {
+                        cards: 200,
+                        current: 4,
+                        print: function(){
+                  //         alert(this.cards); 
+                        }
+                    };
+                    
+                    hand.print();
+                    
+                    function Cards(name, suit, value){
+                        this.name = name;
+                        this.suit = suit;
+                        this.value = value;
+                        this.print = function (){
+                 //           alert(this.suit);
+                        };
+                    }
+                    
+                    var c = new Cards("dscs",2,3);
+                    c.print();
+                    
+                   $("#foo").click(function() {
+                //	 alert(2222);
+                    });
+                    
+                   $("#foo").trigger("click"); 
+                   
+                   $("<img>").attr('src','Monster_Mashup.png').appendTo("#content");
+                   
+                    $("h1").html("7777");
+            });
+            
+            
+            
+            
+        </script>
+    </body>
+</html>
